@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num1, num2 = 0, num3, num4, check;
+    printf("Enter number: ");
+    check = scanf("%d", &num1);
+    
+    
+    if (!check)
+    {
+        printf("The inputted data is Invalid");
+        return 0;
+    }
+    num4 = num1;
+
+    while (num1 !=0){
+        num3 = num1 % 10;
+        num2 = num2 * 10 + num3;
+        num1 /= 10;
+    
+    }
+    printf("Reversed number for %d is %d", num4 ,num2);
+    return 0;
+}
