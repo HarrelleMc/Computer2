@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num, check;
+
+    printf("Enter number: ");
+    check = scanf("%d", &num);
+
+    
+    
+    switch(!check)
+    {
+    case 1:
+    printf("invalid Number");
+    
+    break;
+    }
+    
+    
+   switch(num > 0)
+    {
+    case 1:
+        printf("\nThe integer is a positive number.");
+
+        break;
+
+    case 0:
+    switch(num < 0)
+    {
+    case 1:
+        printf("\nThe integer is a negative number.");
+
+        break;
+    }
+}
+    
+return 0;
+}
