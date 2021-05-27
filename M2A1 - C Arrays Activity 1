@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Create Program that adds all the array elements and prints the sum, using recursion//
+
+//+ Array size limit is 5 to 10 only.//
+//+ The user must input the array size//
+//+ The user must input the elements.//
+
+int main()
+{
+  int i, sum = 0, c, check, value;    // this is where the decleration of variables//
+ 
+ printf("size of array: ");             // this ask for the size of the array//
+        check = scanf("%d", &i);        //**********************************//
+        if(!check) {                   // this check if the inputed value is integer or a character//
+                printf("Invalid Size Input!\nPlease try again");         
+                return 0;
+        }
+        
+        if(i > 10 )     //this limits how many array should be inputed//
+{                                                   
+    printf("Size shoud be 5 to 10 only"); //this is a decleration if your array if it overlaps the given limit//
+    return 0;
+}
+        
+  for (c = 1; c <= i; c++)       //this is where the loop happen//      
+  {
+      printf("Element %d:", c); 
+    scanf("%d", &value);    
+    sum = sum + value;      // this is where the calculation happens//
+  }
+  
+  printf("Sum of all array elements: %d\n", sum); //this print the total of the array//
+ 
+  return 0;
+}
